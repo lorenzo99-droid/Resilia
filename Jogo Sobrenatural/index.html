@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <script src = "jogo.js"></script>
+    <title>Super App</title>
+</head>
+<body>
+    <div class="container">
+        <div id="introducao" class="inntroduzir">
+            <img class= "logo"src="http://24.media.tumblr.com/61d66615cb8a1e3b0ef23fd8c731204a/tumblr_mh3d91gQYk1rlnq93o1_500.gif">
+            <p>A maioria da pessoas não sabem, mas coisas extraordinárias acontecem todos os dias, coisas boas e ruins. No mundo
+            do Sobrenatual, onde se passa a nossa história existem seres mágicos e monsstros malígnos. Felizmente, assim
+            como em tudo no mundo, onde existem as forças do mal também existem as forças do bem para combatê-las. Monstros
+            como vampiros, lobisomens, fastamas e até demônios, anjos, deuses . A verdade é que estamos perdendo a batalha e precisamos de 
+            você para nos ajudar.            
+            </p>
+            <p>Nós vivemos nossa vida no limite, o risco de morte é presente
+            em nossos dias como o Sol da manhã ou o ar em nossos pulmões. 
+            Por quê fazemos isso, voce me pergunta?
+            </p>
+            <p>Salvar pessoas, matar monstros é o negócio da família.</p>
+
+            <button id="quero" value="Vamos nessa!" onclick="aceitar();">Quero participar</button>
+            <button id="recuso">Não quero participar</button>
+        
+
+            <div id="aceito">
+                <h1>Ótimo!!! Vamos começar o seu teste</h1>
+                <button id="avancar" value="Pode vir primeira!" onclick="iniciar();">Avançar</button>
+            </div>
+        </div>
+        <div id="primeira-questao">
+            <div id="pergunta-container" class="esconder">
+                <div id="pergunta">Pergunta</div>
+                <div id="gif"></div>
+                <div id="botoens-respostas" class="btn-grid">
+                    <button class="respostas-botoens">R1</button>
+                    <button class="respostas-botoens">R2</button>
+                    <button class="respostas-botoens">R3</button>
+                    <button class="respostas-botoens">R4</button>
+                </div>
+            </div>
+            <div id="controles">
+
+                <button id="começar" class="começar btn">Começar</button>
+                <button id="próximo" class="próximo btn esconder">Próximo</button>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body{
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.logo{
+    height: 150px;
+    width: 90%;
+    margin: 5px auto;
+}
+
+p{
+    color: #ffffff;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 1.5em
+}
+.container{
+
+    height: 100%;
+    text-align: center;
+    background-color: #000000;
+    box-shadow: 0 0 10px 2px;
+    width: 70%;
+    
+}
+
+#introducao{
+    visibility: visible;
+}
+
+#aceito{
+    visibility: hidden;
+}
+#controles{ /*Botões começar e próximo*/
+    display: flex;
+    justify-content: space-around;
+    width: 222px;
+    margin: 0 auto;
+    
+}
+
+h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    color: #720808;
+    margin-bottom: 0;
+    background-image: url(./img/sangue_efeito.jpeg);
+}
+
+.sangue{
+    margin-top: 0;
+    height: 100px;
+    width: 100%;
+}
+
+#avancar{
+
+    background-color: #ad0909;
+    border: 1 #ffffff;
+    color: #000000;
+    margin-top: 7px;
+    width: 150px;
+    height: 30px;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+
+#avancar:hover{
+    width: 250px;
+    height: 40px;
+    transition: 1.5s;
+    font-size: 1.8em;
+}
+
+#primeira-questao{
+    visibility: hidden;
+}
+.btn{
+    width: 6.5rem;
+}
+
+.btn, button.respostas-botoens{ /*Demais botõens*/
+
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #f1f110;
+    height: 30px;
+    border-radius: 8px;
+    padding: 5px 20px;
+    
+}
+
+button.respostas-botoens:hover{
+
+    color: #c51c1c;
+    border-color:#c51c1c;
+}
+
+.btn-grid{
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 5px 60px;
+    
+}
