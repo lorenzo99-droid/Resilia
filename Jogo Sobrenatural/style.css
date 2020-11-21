@@ -6,8 +6,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -17,7 +17,7 @@ body{
     margin: 5px auto;
 }
 
-p{
+p{ /*#txt*/
     color: #ffffff;
     margin: 0 auto;
     width: 80%;
@@ -34,12 +34,10 @@ p{
 }
 
 #introducao{
-    visibility: visible;
+    width: 100%;
+    height: 100%;
 }
 
-#aceito{
-    visibility: hidden;
-}
 #controles{ /*Botões começar e próximo*/
     display: flex;
     justify-content: space-around;
@@ -51,34 +49,9 @@ p{
 h1{
     font-size: 3.5em;
     font-weight: bold;
-    color: #720808;
+    color: #9c0d0d;
     margin-bottom: 0;
-    background-image: url(./img/sangue_efeito.jpeg);
-}
-
-.sangue{
-    margin-top: 0;
-    height: 100px;
-    width: 100%;
-}
-
-#avancar{
-
-    background-color: #ad0909;
-    border: 1 #ffffff;
-    color: #000000;
-    margin-top: 7px;
-    width: 150px;
-    height: 30px;
-    font-size: 1.3em;
-    font-weight: bolder;
-}
-
-#avancar:hover{
-    width: 250px;
-    height: 40px;
-    transition: 1.5s;
-    font-size: 1.8em;
+        
 }
 
 #primeira-questao{
@@ -113,3 +86,68 @@ button.respostas-botoens:hover{
     margin: 5px 60px;
     
 }
+/* 
+#comecar{
+    background-color: #000000;
+} */
+
+#botaoQuero, #botaoRecuso{    
+    
+    width: 100px;
+    height: 45px;
+    border-radius: 8px;
+    margin: 25px auto;
+}
+
+#desc-pai{
+    display: flex;
+    
+    justify-content: center;
+    
+}
+#desc{
+    flex-direction: column;
+    width: 48%;
+
+}
+.dean{
+    width: 121px;
+    margin: auto 15px;
+}
+
+.dean:hover{
+    width: 131px;
+    margin: auto 15px;
+    transition: 1.5s;
+}
+.sam{
+    width: 200px;
+    margin-left: 15px;
+}
+
+.sam:hover{
+    width: 210px;
+    margin-left: 15px;
+    transition: 1.5s;
+}
+
+.bob{
+    width: 269px;
+    margin-left: 30px;
+    
+}
+
+.bob:hover{
+    width: 279px;
+    margin-left: 30px;
+    transition: 1.5s;
+}
+
+#botoes{
+
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: 0 auto;
+}
+
