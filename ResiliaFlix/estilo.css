@@ -160,7 +160,7 @@ h3{
 
     max-width: 18%;
 }
-.filmes-lancamentos{
+.filmes-lancamentos, .filmes-oscar, sugestoes-para-voce, .Documentarios{
 
     display: flex;
     justify-content: space-around;
@@ -181,49 +181,6 @@ h3{
     width: 18%;
     transition: 1.6s;
 }
-.filmes-lancamentos .o-poço{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-lancamentos .o-poço:hover{
-
-    width: 18%;
-    transition: 1.6s;
-}
-
-.filmes-lancamentos .top-gun{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-lancamentos .top-gun:hover{
-
-    width: 18%;
-    transition: 1.6s;
-}
-
-.filmes-lancamentos .facas-segredos{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-lancamentos .facas-segredos:hover{
-
-    width: 18%;
-    transition: 1.6s;
-}
-.filmes-oscar{
-
-    display: flex;
-    justify-content: space-around;
-    width: 92%;
-    margin: 0 auto;
-
-}
 
 .filmes-oscar .parasita{
 
@@ -237,49 +194,6 @@ h3{
     transition: 1.6s;
 }
 
-.filmes-oscar .guerra{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-oscar .guerra:hover{
-
-    width: 18%;
-    transition: 1.6s;
-}
-
-.filmes-oscar .hollywood{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-oscar .hollywood:hover{
-
-    width: 18%;
-    transition: 1.6s;
-}
-.filmes-oscar .irlandes{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-oscar .irlandes:hover{
-
-    width: 18%;
-    transition: 1.6s;
-}
-
-.sugestoes-para-voce{
-
-    display: flex;
-    justify-content: space-around;
-    width: 92%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
 
 .sugestoes-para-voce1{
 
@@ -384,19 +298,6 @@ h3{
     transition: 1.6s;    
 }
 
-
-.filmes-nacionais1 .cdd{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-nacionais1 .cdd:hover{
-
-    width: 18%;
-    transition: 1.6s;    
-}
-
 .filmes-nacionais1 .cdb{
 
     width: 13%;
@@ -409,19 +310,6 @@ h3{
     transition: 1.6s;    
 }
 
-.filmes-nacionais1 .tde{
-
-    width: 15%;
-    height: 1%;
-}
-
-.filmes-nacionais1 .tde:hover{
-
-    width: 18%;
-    transition: 1.6s;    
-}
-
-
 .filmes-nacionais2{
 
     display: flex;
@@ -429,13 +317,15 @@ h3{
     margin: 5px auto;
     width: 90%;    
 }
-.filmes-nacionais2 .tde2{
 
-    width: 16%;
+
+.filmes-nacionais2 .adc{
+
+    width: 15%;
     height: 1%;
 }
 
-.filmes-nacionais2 .tde2:hover{
+.filmes-nacionais2 .adc:hover{
 
     width: 18%;
     transition: 1.6s;    
@@ -447,14 +337,6 @@ h3{
     width: 92%;
     margin: 0 auto;
 }
-
-/*.Documentarios .eu-nao-sou-seu-negro, .o174, .kurt-cobain, .senna{
-
-    width: 15%;
-    text-align: center;
-    margin: 7px 20px;
-    height: 2%;
-}*/
 
 .Documentarios .eu-nao-sou-seu-negro{
 
@@ -475,34 +357,6 @@ h3{
 }
 
 .Documentarios .kurt-cobain:hover{
-
-    width: 18%;
-    transition: 1.6s;    
-
-}
-
-.Documentarios .senna{
-
-    width: 15%;
-    height: 1%;
-}
-
-
-.Documentarios .senna:hover{
-
-    width: 18%;
-    transition: 1.6s;    
-
-}
-
-
-.Documentarios .o174{
-
-    width: 15%;
-    height: 1%;
-}
-
-.Documentarios .o174:hover{
 
     width: 18%;
     transition: 1.6s;    
