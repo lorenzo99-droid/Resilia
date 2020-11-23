@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.719);
+}
+#container{
+    width: 92%;
+    margin: 10px auto;
+}
+
+#autor{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1{
+    color: rgb(45, 45, 240);
+    font-size: 2.8em;
+    width: 87%;
+    margin: 0 auto;
+} 
+
+#dataDOM{
+    display: flex;
+    justify-content: space-between;
+    width: 207px;
+    margin: 0 auto;
+
+}
+#img{
+    text-align: center;
+}
+#buscarFoto{
+    margin-left: 10px;
+}
+
+#inputData{
+    width: 64%;
+}
+
+h2{
+    margin-left: 24%;
+}
+img#imgEspaco{
+    width: 52%;
+}
+
+#descricao{
+    margin-top: 10px;
+    color: rgba(255, 250, 240, 0.842);
+    font-size: 1.8em;
+}
