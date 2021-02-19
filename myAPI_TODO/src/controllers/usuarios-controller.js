@@ -41,28 +41,24 @@ module.exports = (app, bd) =>
         }
     });
 
-    app.delete('/usuarios:id', async (req, res) =>
-    {
+    app.delete('/usuarios/:id', async (req, res) => {
         let parametro = req.params.id;
-        try
-        {
-            const deletandoUsuario = await usuariosDAO.deletandoUsuario(parametro)
-            res.send(deletandoUsuario)
+        try {
+            const deletaUsuario = await usuariosDAO.deletandoUsuario(parametro)
+            res.send(deletaUsuario)
         }catch
         {
             res.send(err)
         }
     });
 
-    app.put('/usuarios:id', async (req, res) =>
+    app.put('/usuarios/:id', async (req, res) =>
     {
-        let parametro = [req.body.id, req.body.nome, req.body.email, req.body.senha, req.params.id]
-        try
-        {
+        let parametro = [req.body.nome, req.body.email, req.body.senha, req.params.id]
+        try{
             const atualizandoUsuario = await usuariosDAO.atualizandoUsuario(parametro)
             res.send(atualizandoUsuario)
-        }catch
-            {
+        } catch {
                 res.send(err)
             }
     });

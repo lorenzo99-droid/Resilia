@@ -1,28 +1,65 @@
-module.exports = (app) =>
+const TarefasDAO = require('../DAO/tarefas-DAO');
+
+module.exports = (app, bd) =>
 {
-    app.get('/tarefas', (req, res) => 
+    const tarefasDAO = new TarefasDAO(bd);
+    app.get('/tarefas', async (req, res) =>
     {
-        res.send('<h1>Salve, TAREFAS</h1>');
-    } );
-
-    app.get('/tarefas:id', (req, res)=>
-    {
-        res.send('Achei a tarefa!!');
+        try
+        {
+            const mostraTarefas = await tarefasDAO.todasTarefas()
+            res.send(mostraTarefas);
+        }catch
+            {
+                res.send(err);
+            }
     });
 
-    app.post('/tarefas', (req, res) =>
+    app.get('/tarefas/:id', async (req, res)=>
     {
-        res.send('Tarefas inseridas com sucesso!!!')
+        let parametro = req.params.id;
+        try
+        {
+            const mostraTarefaId = await tarefasDAO.sendParamsTarefa(parametro)
+            res.send(mostraTarefaId);
+        }catch
+            {
+                res.send(err);
+            }
     });
 
-    app.delete('/tarefas:id', (req, res) =>
-    {
-        res.send('Tarefas deletada com sucesso!!!')
+    app.post('/tarefas', async (req, res) =>
+    {TITULO, DESCRICAO, STATUS, DATACRIACAO, ID_USUARIO
+       let parametro = [req.body.titulo, req.body.descricao, req.body.status, req.body.datacriacao, req.body.idUsuario]
+       try
+       {
+           const inserindoTarefa = await tarefasDAO.inserindoTarefa(parametro)
+           res.send(inserindoTarefa);
+       }catch
+        {
+            res.send(err);
+        }
     });
 
-    app.put('/tarefas:id', (req, res) =>
+    app.delete('/tarefas/:id', async (req, res) => {
+        let parametro = req.params.id;
+        try {
+            const deletandoTarefa = await tarefasDAO.deletandoTarefa(parametro)
+            res.send(deletandoTarefa)
+        }catch
+        {
+            res.send(err)
+        }
+    });
+
+    app.put('/tarefas/:id', async (req, res) =>
     {
-        res.send('Tarefas atualizada com sucesso!!!')
+        let parametro = [req.body.titulo, req.body.descricao, req.body.status, req.body.datacriacao, req.body.idUsuario]
+        try{
+            const atualizandoTarefa = await tarefasDAO.atualizandoTarefa(parametro)
+            res.send(atualizandoTarefa)
+        } catch {
+                res.send(err)
+            }
     });
 };
-

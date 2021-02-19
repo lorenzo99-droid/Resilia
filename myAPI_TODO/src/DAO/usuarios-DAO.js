@@ -26,7 +26,7 @@ module.exports = class UsuariosDAO
         })
     }
 
-    inserindoUsuarios(parametro)
+    inserindoUsuario(parametro)
     {
         return new Promise((resolve, reject) =>
         {
@@ -39,15 +39,11 @@ module.exports = class UsuariosDAO
 
     deletandoUsuario(parametro)
     {
-        return new Promise((resolve, reject) =>
-        {
-            this.bd.run('DELETE FROM USUARIOS WHERE ID = ?', parametro, (err, linhas) => {
-                if(err) {
-                  reject('Erro ao inserir usuario')
-                } else {
-                  resolve('Usuario removido com sucesso');
-                }
-              })
+        return new Promise((resolve, reject) =>{
+            this.bd.run('DELETE FROM USUARIOS WHERE id = ?', parametro, (err, linhas) =>{
+                if(err) reject('Erro ao inserir usuario');
+                else resolve('Usuario removido com sucesso');
+            })
         })
     }
 
@@ -55,8 +51,8 @@ module.exports = class UsuariosDAO
     {
         return new Promise((resolve, reject) =>
         {
-            this.bd.run('UPDATE USUARIOS SET ID = ?, nome = ?, email = ?, senha = ? WHERE id = ?', parametro, (err, linhas) => {
-                if(err) reject('Erro ao atualizar usuario')
+            this.bd.run('UPDATE USUARIOS SET NOME = ?, EMAIL = ?, SENHA = ? WHERE id = ?', parametro, (err, linhas) => {
+                if(err) reject('Erro ao atualizar usuario');
                 else resolve('Usuario atualizado com sucesso');
               })
         })
